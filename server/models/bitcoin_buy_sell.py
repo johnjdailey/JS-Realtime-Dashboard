@@ -4,7 +4,7 @@ import psycopg2
 import time
 
 conn = psycopg2.connect(database="postgres", user="postgres",
-                        password="Aa@123456", host="127.0.0.1", port="5432")
+                        password="password", host="127.0.0.1", port="5432")
 
 PREDS_URL = "http://localhost:9000/predict/overall"
 ACTUAL_URL = "http://localhost:9000/btc/price"

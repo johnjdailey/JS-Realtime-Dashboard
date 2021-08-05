@@ -8,7 +8,7 @@ warnings.filterwarnings("ignore")
 tweetsData = Blueprint('tweets', __name__)
 
 conn = psycopg2.connect(database="postgres", user="postgres",
-                        password="Aa@123456", host="127.0.0.1", port="5432")
+                        password="password", host="127.0.0.1", port="5432")
 
 
 @tweetsData.route("/tweets/pos", methods=["GET"])

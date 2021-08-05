@@ -9,7 +9,7 @@ import psycopg2
 def setup():
     # Create Database connection
     conn = psycopg2.connect(database="postgres", user="postgres",
-                            password="Aa@123456", host="127.0.0.1", port="5432")
+                        password="password", host="127.0.0.1", port="5432")
 
     # Initilize the sentiment analyzer
     sia = SentimentIntensityAnalyzer()

@@ -6,7 +6,7 @@ import time
 from sklearn.ensemble import RandomForestRegressor
 
 conn = psycopg2.connect(database="postgres", user="postgres",
-                        password="Aa@123456", host="127.0.0.1", port="5432")
+                        password="password", host="127.0.0.1", port="5432")
 
 ARIMA_URL = "http://localhost:9000/predict/ARIMA"
 VARMAX_URL = "http://localhost:9000/predict/VARMAX"
